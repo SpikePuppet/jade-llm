@@ -71,6 +71,7 @@ with open("last_month_ran.rec") as f:
     current_month = datetime.now().month
     if last_month != current_month:
         corpus_month = datetime.now().strftime("%Y-%m-01")
+        f.write(str(current_month))
 
 url = f"https://dumps.wikimedia.org/other/mediawiki_content_current/enwiki/{corpus_month}/xml/bzip2/"
 download_wikipedia_corpus(url)

@@ -11,3 +11,8 @@ wheels/
 
 # Corpus downloads
 wikidownloads/
+wikidownloads_unpacked/
+
+
+# Misc files
+.DS_Store
